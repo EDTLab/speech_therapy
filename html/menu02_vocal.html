@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>언어치료 기능성 게임 > 발성훈련</title>
+<link href="styles.css" rel="stylesheet" type="text/css">
+<script src="jquery-1.11.0.js"></script>
+<script src="popupMenu.js"></script>
+
+</head>
+
+<body>
+<div ID="mainBody">
+	<div ID="mainFrame">
+
+		<!-- 본문 -->
+		<div ID="topArea">
+			<a class="title" href="mainMenu.html"></a>
+			<div ID="sub_title"><span>발성훈련</span></div>
+			<div ID="top_training_info_area">
+				<div ID="top_training_info_area_title">훈련정보</div>
+				<div ID="top_training_info_area_content">누적 훈련 시간: 5시간 41분<br>
+					최근 훈련일: 2013/12/21<br>
+					진행율: 44%<br>
+				</div>
+			</div>
+		</div>
+		<div ID="contentArea">
+			<div ID="vocalMenu">
+				<a ID="vocalMenu1" href="menu02_vocal_submenu.html"></a>
+				<a ID="vocalMenu2" href="#"></a>
+				<a ID="vocalMenu3" href="#"></a>
+			</div>
+			<div ID="vocalMenu_info1">
+				<div ID="vocalMenu_info_level_title">훈련단계</div>
+				<div ID="vocalMenu_info_level">3단계</div>
+				<div ID="vocalMenu_info_level">2단계</div>
+				<div ID="vocalMenu_info_level">1단계</div>
+			</div>
+			<div ID="vocalMenu_info2">
+				<div ID="vocalMenu_info_percent_title">성취도</div>
+				<div ID="vocalMenu_info_percent">
+					<div ID="vocalMenu_info_percent_bar" style="width: 155px"></div>
+					<div ID="vocalMenu_info_percent_number">62%</div>
+				</div>
+				<div ID="vocalMenu_info_percent">
+					<div ID="vocalMenu_info_percent_bar" style="width: 120px"></div>
+					<div ID="vocalMenu_info_percent_number">48%</div>
+				</div>
+				<div ID="vocalMenu_info_percent">
+					<div ID="vocalMenu_info_percent_bar" style="width: 57.5px"></div>
+					<div ID="vocalMenu_info_percent_number">23%</div>
+				</div>
+			</div>
+		</div>
+		<div ID="bottomArea">
+			<a href="#" ID="menu" onclick="showMenu()"></a>
+		</div>
+
+
+	</div>
+</div>
+<div ID="popupMenu" class="popup_background">
+	<span><a href="#" onclick="hideMenu()">게임으로 돌아가기</a><br>
+		<a href="mainMenu.html">메인으로 가기</a><br>
+		설정<br>
+		로그아웃<br>
+		종료</span>
+</div>
+</body>
+</html>

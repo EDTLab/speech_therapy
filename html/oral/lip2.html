@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>언어치료 기능성 게임 > 구강운동 > 입술운동</title>
+<link href="../styles.css" rel="stylesheet" type="text/css">
+<script src="jquery-1.11.0.js"></script>
+<script src="popupMenu.js"></script>
+<script src="cam.js"></script>
+</head>
+
+<body>
+<div ID="mainBody">
+	<div ID="mainFrame">
+
+		<!-- 본문 -->
+		<div ID="topArea">
+			<a class="title" href="../mainMenu.html"></a>
+			<div ID="sub_title"><span>구강운동 > <font ID="current_sub_title">입술운동</font></span></div>
+			<a ID="oral_top_menu3" href="../menu01_oral_submenu_03_jaw.html"></a>
+			<a ID="oral_top_menu2" href="../menu01_oral_submenu_02_tongue.html"></a>
+			<a ID="oral_top_menu1" href="../menu01_oral_submenu_01_lip.html"></a>
+		</div>
+		<div ID="contentArea">
+			<div ID="oral_content_title">2. 미소짓기</div>
+			<div ID="contents">
+				<div class="oral_top">
+					<div ID="oral_prev"><span>1. 긴장-이완</span><a ID="oral_prevBtn" href="lip1.html"></a></div>
+					<div ID="oral_video">
+						<video controls autoplay loop muted style="width:400px; height:300px">
+							<source src="../img/1_oral/video/lip2.mp4" type="video/mp4">
+							<source src="../img/1_oral/video/lip2.ogg" type="video/ogg">
+							<source src="../img/1_oral/video/lip2.webm" type="video/webm">
+						</video>
+					</div>
+					<div ID="oral_cam">
+						<video ID="video" autoplay style="width:400px; height:300px"></video>
+					</div>
+					<div ID="oral_next"><span>3. 볼 부풀리기</span><a ID="oral_nextBtn" href="lip3.html"></a></div>
+				</div>
+				<div class="oral_bottom">
+					<span ID="oral_method_title">운동방법</span>
+					<span ID="oral_method">① 위아래 입술을 자연스럽게 벌린다. /아/<br>
+						② 입술에 힘을 주어 꽉 다물고 3초 유지한다. /읍/<br><br>
+						반복 횟수: 5회<br><br>
+						<치료사 가이드><br>
+						- 입술로 설압자 등을 물 수 있도록 할 수 있다.<br>
+						- 치료대상자의 위아래 입술을 손으로 눌러줄 수 있다.</span>
+				</div>
+			</div>
+		</div>
+		<div ID="bottomArea">
+			<a href="#" ID="menu" onclick="showMenu()"></a>
+		</div>
+
+
+	</div>
+</div>
+<div ID="popupMenu" class="popup_background">
+	<span><a href="#" onclick="hideMenu()">게임으로 돌아가기</a><br>
+		<a href="../mainMenu.html">메인으로 가기</a><br>
+		설정<br>
+		로그아웃<br>
+		종료</span>
+</div>
+</body>
+</html>

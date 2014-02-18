@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>언어치료 기능성 게임 > 조음훈련</title>
+<link href="styles.css" rel="stylesheet" type="text/css">
+<script src="jquery-1.11.0.js"></script>
+<script src="popupMenu.js"></script>
+
+</head>
+
+<body>
+<div ID="mainBody">
+	<div ID="mainFrame">
+
+		<!-- 본문 -->
+		<div ID="topArea">
+			<a class="title" href="mainMenu.html"></a>
+			<div ID="sub_title"><span>조음훈련 > <font ID="current_sub_title">선택게임</font></span></div>
+		</div>
+		<div ID="contentArea">
+			<div ID="contents">
+				<div ID="game_info_area_left">
+					<img src="img/3_arti/game1.jpg">
+					<span>목표 자음: ㅁ<br>
+						목표 음소: 어두 종성<br>
+						훈련 단계: 단어</span>
+				</div>
+				<div ID="game_info_area_right">
+					<span>게임 설명</span>
+					<div ID="game_info_content">
+						<span>단어를 연습하시면서 원하는 길을 선택해보세요.<br>
+							우연한 선택이 큰 행운을 불러올지도 모릅니다.</span>
+						<img src="img/3_arti/game1_info1.jpg">
+						<img src="img/3_arti/game1_info2.jpg">
+						<img src="img/3_arti/game1_info3.jpg">
+					</div>
+					<a ID="game_startBtn" href="menu03_arti_game1.html"></a>
+				</div>
+			</div>
+		</div>
+		<div ID="bottomArea">
+			<a href="#" ID="menu" onclick="showMenu()"></a>
+		</div>
+
+
+	</div>
+</div>
+<div ID="popupMenu" class="popup_background">
+	<span><a href="#" onclick="hideMenu()">게임으로 돌아가기</a><br>
+		<a href="mainMenu.html">메인으로 가기</a><br>
+		설정<br>
+		로그아웃<br>
+		종료</span>
+</div>
+</body>
+</html>

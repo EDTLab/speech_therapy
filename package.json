@@ -1,0 +1,60 @@
+{
+    "name": "SpeechTherapy",
+    "description": "node-webkit application for Speech Theraph Project in EDT Lab. POSTECH",
+    "version": "0.1",
+    "keywords": [
+        "node-webket",
+        "node",
+        "POSTECH",
+        "EDT Lab"
+    ],
+    "licenses": [
+        {
+            "name": "MIT",
+            "url": "http://www.opensource.org/licenses/mit-license.php"
+        }
+    ],
+
+    "maintainers": [
+        {
+            "name": "Wonsup Lee",
+            "email": "mcury@postech.ac.kr"
+        },
+        {
+            "name": "Sinyeol An",
+            "email": "soundlake@gmail.com",
+            "web": "http://soundlake.net"
+        }
+    ],
+    "contributors": [
+        {
+            "name": "Wonsup Lee",
+            "email": "mcury@postech.ac.kr"
+        },
+        {
+            "name": "Sinyeol An",
+            "email": "soundlake@gmail.com",
+            "web": "http://soundlake.net"
+        }
+    ],
+
+    "bugs": {
+        "mail": "soundlake@gmail.com",
+        "web": "https://github.com/soundlake/speech_therapy/issues"
+    },
+    "repositories": [
+        {
+            "type": "git",
+            "url": "https://github.com/soundlake/speech_therapy"
+        }
+    ],
+    "dependencies": {
+    },
+
+    "main": "index.html",
+    "window": {
+        "toolbar": false,
+        "width": 1280,
+        "height": 720
+    }
+}

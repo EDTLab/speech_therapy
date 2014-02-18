@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>언어치료 기능성 게임 > 조음훈련</title>
+<link href="styles.css" rel="stylesheet" type="text/css">
+<link href="styles_arti_game1.css" rel="stylesheet" type="text/css">
+<script src="jquery-1.11.0.js"></script>
+<script src="popupMenu.js"></script>
+</head>
+
+<body>
+<div ID="mainBody">
+	<div ID="mainFrame">
+
+		<!-- 본문 -->
+		<div ID="topArea">
+			<a class="title" href="mainMenu.html"></a>
+			<div ID="sub_title"><span>조음훈련 > <font ID="current_sub_title">선택게임</font></span></div>
+			<span>목표 자음: ㅁ<br>
+				목표 음소: 어두 종성<br>
+				훈련 단계: 단어</span>
+		</div>
+		<div ID="contentArea">
+			<div ID="contents">
+				<div ID="smallCircle1" class="arti_game1_smallCircle"></div>
+				<div ID="smallCircle2" class="arti_game1_smallCircle"></div>
+				<div ID="smallCircle3" class="arti_game1_smallCircle"></div>
+				<div ID="smallCircle4" class="arti_game1_smallCircle"></div>
+				<img class="arti_game1_bigCircle" src="img/3_arti/game1/bigCircle01.png">
+				<span class="arti_game1_word">엄지</span>
+				<span class="arti_game1_point">50 point</span>
+			</div>
+		</div>
+		<div ID="bottomArea">
+			<a href="#" ID="menu" onclick="showMenu()"></a>
+		</div>
+
+
+
+	</div>
+</div>
+<div ID="popupMenu" class="popup_background">
+	<span><a href="#" onclick="hideMenu()">게임으로 돌아가기</a><br>
+		<a href="mainMenu.html">메인으로 가기</a><br>
+		설정<br>
+		로그아웃<br>
+		종료</span>
+</div>
+</body>
+</html>
+<script src="arti_game1.js"></script>

@@ -1,0 +1,38 @@
+#contents {
+	display: block;
+	}
+
+.arti_game1_smallCircle {
+	border-radius: 100%;
+	border: solid 5px gray;
+	min-width: 60px;
+	min-height: 60px;
+	width: 120px;
+	height: 120px;
+	position: absolute;
+	background-color: #e6e6e6;
+	z-index: 1;
+	}
+
+.arti_game1_bigCircle {
+	position: relative;
+	margin-top: 40px;
+	z-index: 2;
+	}
+
+.arti_game1_word {
+	position: relative;
+	display: block;
+	margin-top: -350px;
+	font-size: 150pt;
+	text-shadow: -5px 0 white, 5px 0 white, 0 5px white, 0 -5px white, 5px 5px white, 5px -5px white, -5px 5px white, -5px -5px white;
+	z-index: 3;
+	}
+
+.arti_game1_point {
+	position: relative;
+	display: block;
+	margin-top: 120px;
+	font-size: 25pt;
+	z-index: 4;
+	}

@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>언어치료 기능성 게임 > 조음훈련</title>
+<link href="styles.css" rel="stylesheet" type="text/css">
+<script src="jquery-1.11.0.js"></script>
+<script src="popupMenu.js"></script>
+
+</head>
+
+<body>
+<div ID="mainBody">
+	<div ID="mainFrame">
+
+		<!-- 본문 -->
+		<div ID="topArea">
+			<a class="title" href="mainMenu.html"></a>
+			<div ID="sub_title"><span>조음훈련</span></div>
+			<div ID="top_training_info_area">
+				<div ID="top_training_info_area_title">훈련정보</div>
+				<div ID="top_training_info_area_content">누적 훈련 시간: 11시간 14분<br>
+					최근 훈련일: 2014/01/23<br>
+					진행율: 23%<br>
+				</div>
+			</div>
+		</div>
+		<div ID="contentArea">
+			<div ID="contents">
+				<div class="game_list">
+					<a ID="arti_game1" class="game_img" href="menu03_arti_game_info.html"></a>
+					<span></span>
+				</div>
+				<div class="game_list">
+					<a ID="arti_game2" class="game_img" href="#"></a>
+					<span>2,000점</span>
+				</div>
+				<div class="game_list">
+					<a ID="arti_game3" class="game_img" href="#"></a>
+					<span>2,000점</span>
+				</div>
+				<div class="game_list">
+					<a ID="arti_game4" class="game_img" href="#"></a>
+					<span>3,000점</span>
+				</div>
+				<div class="game_list">
+					<a ID="arti_game5" class="game_img" href="#"></a>
+					<span>5,000점</span>
+				</div>
+				<div class="game_list">
+					<a ID="arti_game6" class="game_img" href="#"></a>
+					<span>5,000점</span>
+				</div>
+				<div class="game_list">
+					<a ID="arti_game7" class="game_img" href="#"></a>
+					<span>10,000점</span>
+				</div>			</div>
+		</div>
+		<div ID="bottomArea">
+			<a href="#" ID="menu" onclick="showMenu()"></a>
+			<div ID="current_point">
+				<span>보유 point </span>
+				<span ID="current_point_number">1,412 </span>
+				<span>점</span>
+			</div>
+
+		</div>
+
+
+
+	</div>
+</div>
+<div ID="popupMenu" class="popup_background">
+	<span><a href="#" onclick="hideMenu()">게임으로 돌아가기</a><br>
+		<a href="mainMenu.html">메인으로 가기</a><br>
+		설정<br>
+		로그아웃<br>
+		종료</span>
+</div>
+</body>
+</html>

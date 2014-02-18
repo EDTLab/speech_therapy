@@ -1,0 +1,15 @@
+#game1_1_balloon {
+	width: 80px;
+	height: 80px;
+	margin-top: 230px;
+	}
+
+#game1_1_count {
+	position: relative;
+	margin-top: 20px;
+	font-size: 100pt;
+	/*font-style: italic;
+	margin-left: -5px;*/
+	color: gray;
+	display: block;
+	}

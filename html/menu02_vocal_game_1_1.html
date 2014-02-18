@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>언어치료 기능성 게임 > 발성훈련 > 소리지속훈련</title>
+<link href="styles.css" rel="stylesheet" type="text/css">
+<link href="styles_vocal_game1_1.css" rel="stylesheet" type="text/css">
+<script src="jquery-1.11.0.js"></script>
+<script src="popupMenu.js"></script>
+<script src="vocal_game1_1.js"></script>
+
+</head>
+
+<body>
+<div ID="mainBody">
+	<div ID="mainFrame">
+
+		<!-- 본문 -->
+		<div ID="topArea">
+			<a class="title" href="mainMenu.html"></a>
+			<div ID="sub_title"><span>발성훈련 > 소리지속훈련 > <font ID="current_sub_title">풍선빨리불기</font></span></div>
+		</div>
+		<div ID="contentArea">
+			<div ID="contents">
+				<img ID="game1_1_balloon" src="img/2_vocal/game1_1/balloon_start.png">
+				<span ID="game1_1_count">3</span>
+			</div>
+		</div>
+		<div ID="bottomArea">
+			<a href="#" ID="menu" onclick="showMenu()"></a>
+		</div>
+
+
+	</div>
+</div>
+<div ID="popupMenu" class="popup_background">
+	<span><a href="#" onclick="hideMenu()">게임으로 돌아가기</a><br>
+		<a href="mainMenu.html">메인으로 가기</a><br>
+		설정<br>
+		로그아웃<br>
+		종료</span>
+</div>
+</body>
+</html>

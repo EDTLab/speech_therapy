@@ -1,0 +1,66 @@
+{
+	"category": "lip",
+	"movie_address": "img/1_oral/movie/lip",
+	"jpg_address": "img/1_oral/thumbnail/lip",
+	"data": [
+		{
+			"number": 1,
+			"name": "긴장-이완",
+			"info": "① 위아래 입술을 자연스럽게 벌린다. /아/<br>
+				② 입술에 힘을 주어 꽉 다물고 3초 유지한다. /읍/<br><br>
+				반복 횟수: 5회<br><br>
+				<치료사 가이드><br>
+				- 입술로 설압자 등을 물 수 있도록 할 수 있다.<br>
+				- 치료대상자의 위아래 입술을 손으로 눌러줄 수 있다."
+		},
+		{
+			"number": 2,
+			"name": "미소짓기",
+			"info": "① 위아래 치아가 살짝 보이도록 입을 약간 벌린다. /헤/<br>
+				② 미소 짓듯이 입을 양옆으로 살짝 벌리고 3초 유지한다. /치-즈/<br><br>
+				반복 횟수: 5회<br><br>
+				<치료사 가이드><br>
+				- 자연스런 미소를 지어 보여준다.<br>
+				- 치료대상자의 위아래 입술 끝을 좌우로 살짝 밀어줄 수 있다."
+		},
+		{
+			"number": 3,
+			"name": "볼 부풀리기",
+			"info": "① 위아래 입술을 다물고 3초간 양쪽 볼 부풀리기를 하도록 한다.<br>
+				② 좌, 우 방향으로 번갈아가며 3초씩 볼 부풀리기를 시도한다.<br><br>
+				반복 횟수: 5회<br><br>
+				<치료사 가이드><br>
+				- 코로 공기가 새어나가지 않도록 코를 잡아줄 수 있다."
+		}
+	],
+	"category": "tongue",
+	"movie_address": "img/1_oral/movie/tongue",
+	"jpg_address": "img/1_oral/thumbnail/tongue",
+	"data": [
+		{
+			"number": 1,
+			"name": "",
+			"info": ""
+		},
+		{
+			"number": 2,
+			"name": "",
+			"info": ""
+		}
+	],
+	"category": "jaw",
+	"movie_address": "img/1_oral/movie/jaw",
+	"jpg_address": "img/1_oral/thumbnail/jaw",
+	"data": [
+		{
+			"number": 1,
+			"name": "",
+			"info": ""
+		},
+		{
+			"number": 2,
+			"name": "",
+			"info": ""
+		}
+	]
+}

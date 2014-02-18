@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>언어치료 기능성 게임</title>
+<link href="styles.css" rel="stylesheet" type="text/css">
+<script src="jquery-1.11.0.js"></script>
+<script src="popupMenu.js"></script>
+
+</head>
+
+<body>
+<div ID="mainBody">
+	<div ID="mainFrame">
+
+		<!-- 본문 -->
+		<div ID="topArea">
+			<a class="title" href="mainMenu.html"></a>
+			<a class="achievement" href="achievement.html"></a>
+			<a class="trainingRecord" href="#"></a>
+		</div>
+		<div ID="contentArea">
+			<div ID="mainMenu_img">
+				<a ID="mainMenu1" href="menu01_oral.html"></a>
+				<a ID="mainMenu2" href="menu02_vocal.html"></a>
+				<a ID="mainMenu3" href="menu03_arti.html"></a>
+				<a ID="mainMenu4" href="#"></a>
+			</div>
+			<div ID="mainMenu_text">
+				<div ID="mainMenu1_text">누적 훈련 시간: 2시간 16분<br>최근 훈련일: 2014/01/23</div>
+				<div ID="mainMenu2_text">누적 훈련 시간: 5시간 41분<br>최근 훈련일: 2013/12/21<br>진행율: 44%</div>
+				<div ID="mainMenu3_text">누적 훈련 시간: 11시간 14분<br>최근 훈련일: 2014/01/23<br>진행율: 23%</div>
+				<div ID="mainMenu4_text">누적 훈련 시간: 1시간 27분<br>최근 훈련일: 2013/09/12<br>진행율: 3%</div>
+			</div>
+		</div>
+		<div ID="bottomArea">
+			<a href="#" ID="menu" onclick="showMenu()"></a>
+		</div>
+
+
+	</div>
+</div>
+<div ID="popupMenu" class="popup_background">
+	<span><a href="#" onclick="hideMenu()">게임으로 돌아가기</a><br>
+		<a href="mainMenu.html">메인으로 가기</a><br>
+		설정<br>
+		로그아웃<br>
+		종료</span>
+</div>
+</body>
+</html>

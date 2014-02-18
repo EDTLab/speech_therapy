@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>언어치료 기능성 게임 > 발성훈련 > 소리지속훈련</title>
+<link href="styles.css" rel="stylesheet" type="text/css">
+<script src="jquery-1.11.0.js"></script>
+<script src="popupMenu.js"></script>
+
+</head>
+
+<body>
+<div ID="mainBody">
+	<div ID="mainFrame">
+
+		<!-- 본문 -->
+		<div ID="topArea">
+			<a class="title" href="mainMenu.html"></a>
+			<div ID="sub_title"><span>발성훈련 > <font ID="current_sub_title">소리지속훈련</font></span></div>
+			<a ID="vocal_top_menu3" href="#"></a>
+			<a ID="vocal_top_menu2" href="#"></a>
+			<a ID="vocal_top_menu1" href="#"></a>
+		</div>
+		<div ID="contentArea">
+			<div ID="contents">
+				<div class="game_list">
+					<a ID="vocal_game1_1" class="game_img" href="menu02_vocal_game_info.html"></a>
+					<span></span>
+				</div>
+				<div class="game_list">
+					<a ID="vocal_game1_2" class="game_img" href="#" onclick="showPopup_lackPoint()"></a>
+					<span>2,000점</span>
+				</div>
+				<div class="game_list">
+					<a ID="vocal_game1_3" class="game_img" href="#"></a>
+					<span>2,000점</span>
+				</div>
+				<div class="game_list">
+					<a ID="vocal_game1_4" class="game_img" href="#"></a>
+					<span>3,000점</span>
+				</div>
+				<div class="game_list">
+					<a ID="vocal_game1_5" class="game_img" href="#"></a>
+					<span>5,000점</span>
+				</div>
+			</div>
+		</div>
+		<div ID="bottom_area">
+			<a href="#" ID="menu" onclick="showMenu()"></a>
+			<div ID="current_point">
+				<span>보유 point </span>
+				<span ID="current_point_number">1,412 </span>
+				<span>점</span>
+			</div>
+		</div>
+
+
+
+	</div>
+</div>
+<div ID="popupMenu" class="popup_background">
+	<span><a href="#" onclick="hideMenu()">게임으로 돌아가기</a><br>
+		<a href="mainMenu.html">메인으로 가기</a><br>
+		설정<br>
+		로그아웃<br>
+		종료</span>
+</div>
+<div ID="lackPoint" class="popup_background">
+	<span>게임을 해제하시려면<br>
+	<font>2,000 point</font>가 필요합니다.<br>
+	<a ID="lackPoint_okBtn" href="#" onclick="hidePopup_lackPoint()"></a></span>
+</div>
+</body>
+</html>

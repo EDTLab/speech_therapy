@@ -1,0 +1,754 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	}
+
+body {
+	font-family: NanumGothic, Tahoma, Malgun Gothic, Dotum;
+	background-color: #000;
+	}
+
+#mainBody {
+	width: 100%;
+	height: 100%;
+	text-align: center;
+    margin-top: 20px;
+	}
+
+#mainFrame, #acheivement_mainFrame {
+	width: 1600px;
+	height: 900px;
+	background-color: #fbfbfb;
+	margin: auto;
+	}
+
+#acheivement_mainFrame { background:url('img/achievement/achievement_back.jpg') no-repeat center center; }
+
+#topArea {
+	width: 1600px;
+	height:140px;
+	}
+
+#contentArea {
+	width: 1600px;
+	height:670px;
+	}
+
+#contents {
+	width: 1500px;
+	height: 624px;
+	margin: 0 auto;
+	padding-top: 46px;
+	background:url('img/contents_background.jpg') no-repeat center bottom;
+	}
+
+#bottomArea {
+	width: 1600px;
+	height:90px;
+	}
+
+.title {
+	position: relative;
+	float: left;
+	width: 460px;
+	height: 115px;
+	background:url('img/main_title.jpg') no-repeat right bottom;
+	}
+
+.title:hover { background:url('img/main_title_hover.jpg') no-repeat right bottom; }
+
+#sub_title {
+	position: relative;
+	float: left;
+	width: 600px;
+	height:	70px;
+	text-align: left;
+	font-size: 20pt;
+	font-weight: bold;
+	color: #757575;
+	}
+
+#sub_title span {
+	position: absolute;
+	bottom: 0px;
+	}
+
+#current_sub_title {
+	color: #3c3c3c;
+	font-size: 25pt;
+	vertical-align: 2px;
+	}
+
+#menu {
+	float: left;
+	width: 110px;
+	height: 50px;
+	margin-top: 20px;
+	margin-left: 20px;
+	background:url('img/menuBtn.jpg') no-repeat left bottom;
+	text-align: left;
+	}
+
+#current_point {
+	float: right;
+	margin-top: 5px;
+	margin-right: 60px;
+	font-size: 20pt;
+	font-weight: bold;
+	color: #555555;
+	}
+
+#current_point div {
+	float: left;
+	margin-left: 10px;
+	}
+
+#current_point_number {
+	margin-left: 30px;
+	}
+
+.popup_background {
+	position: absolute;
+	top: 20px;
+	width: 100%;
+	height: 920px;
+	background-color: rgba(0,0,0,0.8);
+	visibility: hidden;
+	text-align: center;
+	z-index: 99;
+	}
+
+#popupMenu span {
+	width: 250px;
+	height: 220px;
+	background-color: #000000;
+	border: solid 2px #ffffff;
+	text-align: center;
+	font-size: 20pt;
+	color: #ffffff;
+	line-height: 150%;
+    display: inline-block;
+	margin-top: 320px;
+	padding-top: 20px;
+	}
+
+#popupMenu a {
+	color: #ffffff;
+	text-decoration: none;
+	}
+
+/* INTRO */
+#top_image, #index_title, #login, #organization {
+	position: relative;
+	width: 100%;
+	}
+
+#index_top_image {
+	height: 380px;
+	background:url('img/intro/top.jpg') no-repeat center bottom;
+	}
+
+#index_title {
+	height: 180px;
+	background:url('img/intro/title.jpg') no-repeat center bottom;
+	}
+
+#login {
+	height: 250px;
+	}
+
+#IDPW {
+	position: absolute;
+	left: 540px;
+	width: 300px;
+	height: 95px;
+	margin-top: 80px;
+	text-align: left;
+	font-size: 20pt;
+	background:url('img/intro/idpw.jpg') no-repeat left center;
+	}
+
+#IDPW input {
+	height: 30px;
+	margin-left: 65px;
+	margin-top: 10px;
+	vertical-align:bottom;
+	border: solid 2px #444
+	}
+
+#startBtn {
+	position: absolute;
+	left: 850px;
+	width: 200px;
+	height: 95px;
+	margin-top: 100px;
+	}
+
+#organization {
+	height: 90px;
+	background:url('img/intro/logo.jpg') no-repeat center top;
+	}
+
+
+/* MAIN MENU */
+.trainingRecord, .achievement {
+	width: 110px;
+	height: 130px;
+	position: relative;
+	float: right;
+	margin-top: 10px;
+	margin-right:30px;
+	}
+
+.trainingRecord { background:url('img/mainMenu/trainingRecord.jpg') no-repeat center center; }
+.achievement	{ background:url('img/mainMenu/achievement.jpg') no-repeat center center; }
+
+#mainMenu1, #mainMenu2, #mainMenu3, #mainMenu4 {
+	width: 291px;
+	height: 418px;
+	margin-top: 50px;
+	margin-left: 40px;
+	margin-right: 40px;
+	display: inline-block;
+}
+
+#mainMenu1 { background:url('img/mainMenu/menu1.jpg') no-repeat center center; }
+#mainMenu2 { background:url('img/mainMenu/menu2.jpg') no-repeat center center; }
+#mainMenu3 { background:url('img/mainMenu/menu3.jpg') no-repeat center center; }
+#mainMenu4 { background:url('img/mainMenu/menu4.jpg') no-repeat center center; }
+
+#mainMenu1:hover { background:url('img/mainMenu/menu1_hover.jpg') no-repeat center center; }
+#mainMenu2:hover { background:url('img/mainMenu/menu2_hover.jpg') no-repeat center center; }
+#mainMenu3:hover { background:url('img/mainMenu/menu3_hover.jpg') no-repeat center center; }
+#mainMenu4:hover { background:url('img/mainMenu/menu4_hover.jpg') no-repeat center center; }
+
+#mainMenu1_text, #mainMenu2_text, #mainMenu3_text, #mainMenu4_text {
+	width: 291px;
+	height: 150px;
+	margin-top: 20px;
+	margin-left: 40px;
+	margin-right: 40px;
+	display: inline-block;
+	text-align: left;
+	vertical-align: top;
+	font-size: 14pt;
+}
+
+
+/* MENU 01 - ORAL EXERCISES */
+#oralMenu1, #oralMenu2, #oralMenu3 {
+	width: 328px;
+	height: 412px;
+	margin-top: 80px;
+	margin-left: 40px;
+	margin-right: 40px;
+	display: inline-block;
+	}
+
+#oralMenu1 { background:url('img/1_oral/menu01_lip.jpg') no-repeat center center; }
+#oralMenu2 { background:url('img/1_oral/menu02_tongue.jpg') no-repeat center center; }
+#oralMenu3 { background:url('img/1_oral/menu03_jaw.jpg') no-repeat center center; }
+
+#oralMenu1:hover { background:url('img/1_oral/menu01_lip_hover.jpg') no-repeat center center; }
+#oralMenu2:hover { background:url('img/1_oral/menu02_tongue_hover.jpg') no-repeat center center; }
+#oralMenu3:hover { background:url('img/1_oral/menu03_jaw_hover.jpg') no-repeat center center; }
+
+#oral_top_menu1, #oral_top_menu2, #oral_top_menu3 {
+	width: 110px;
+	height: 130px;
+	position: relative;
+	float: right;
+	margin-top: 10px;
+	margin-right: 15px;
+	}
+
+#oral_top_menu1 { background:url('img/1_oral/menu01_lip_top.jpg') no-repeat center center; }
+#oral_top_menu2 { background:url('img/1_oral/menu02_tongue_top.jpg') no-repeat center center; }
+#oral_top_menu3 { background:url('img/1_oral/menu03_jaw_top.jpg') no-repeat center center; }
+
+#oral_top_menu1:hover { background:url('img/1_oral/menu01_lip_top_hover.jpg') no-repeat center center; }
+#oral_top_menu2:hover { background:url('img/1_oral/menu02_tongue_top_hover.jpg') no-repeat center center; }
+#oral_top_menu3:hover { background:url('img/1_oral/menu03_jaw_top_hover.jpg') no-repeat center center; }
+
+.content_list {
+	float: left;
+	width: 210px;
+	height: 170px;
+	margin-top: 30px;
+	margin-left: 45px;
+	margin-right: 45px;
+	}
+
+.content_list span {
+	font-size: 15pt;
+	letter-spacing: -1px;
+	display: block;
+	}
+
+.oral_lip {
+	width: 175px;
+	height: 130px;
+	display: block;
+	margin-top: 10px;
+	margin: auto;
+	}
+
+#oral_lip1  { background:url('img/1_oral/thumbnail/lip1.jpg') no-repeat center center; }
+#oral_lip2  { background:url('img/1_oral/thumbnail/lip2.jpg') no-repeat center center; }
+#oral_lip3  { background:url('img/1_oral/thumbnail/lip3.jpg') no-repeat center center; }
+#oral_lip4  { background:url('img/1_oral/thumbnail/lip4.jpg') no-repeat center center; }
+#oral_lip5  { background:url('img/1_oral/thumbnail/lip5.jpg') no-repeat center center; }
+#oral_lip6  { background:url('img/1_oral/thumbnail/lip6.jpg') no-repeat center center; }
+#oral_lip7  { background:url('img/1_oral/thumbnail/lip7.jpg') no-repeat center center; }
+#oral_lip8  { background:url('img/1_oral/thumbnail/lip8.jpg') no-repeat center center; }
+#oral_lip9  { background:url('img/1_oral/thumbnail/lip9.jpg') no-repeat center center; }
+#oral_lip10 { background:url('img/1_oral/thumbnail/lip10.jpg') no-repeat center center; }
+#oral_lip11 { background:url('img/1_oral/thumbnail/lip11.jpg') no-repeat center center; }
+#oral_lip12 { background:url('img/1_oral/thumbnail/lip12.jpg') no-repeat center center; }
+#oral_lip13 { background:url('img/1_oral/thumbnail/lip13.jpg') no-repeat center center; }
+#oral_lip14 { background:url('img/1_oral/thumbnail/lip14.jpg') no-repeat center center; }
+#oral_lip15 { background:url('img/1_oral/thumbnail/lip15.jpg') no-repeat center center; }
+
+#oral_content_title {
+	position: absolute;
+	width: 1600px;
+	font-size: 25pt;
+	font-weight: bold;
+	color: #3c3c3c;
+	text-align: center;
+	}
+
+.oral_top, .oral_bottom, #oral_prev, #oral_video, #oral_cam, #oral_next, #oral_method_title, #oral_method {
+	float: left;
+	}
+
+#oral_prev, #oral_next {
+	width: 200px;
+	margin-top: 100px;
+	margin-left: 20px;
+	margin-right: 20px;
+	}
+
+#oral_prev span, #oral_next span {
+	font-size: 14pt;
+	line-height:40px;
+	letter-spacing: -1px;
+	display: block;
+	}
+
+#oral_prevBtn, #oral_nextBtn {
+	width: 59px;
+	height: 79px;
+	display: block;
+	margin: auto;
+	}
+
+#oral_prevBtn { background:url('img/1_oral/prevBtn.jpg') no-repeat center center; }
+#oral_nextBtn { background:url('img/1_oral/nextBtn.jpg') no-repeat center center; }
+
+#oral_video, #oral_cam {
+	width: 400px;
+	margin-top: 30px;
+	}
+
+#oral_video {
+	margin-left: 50px;
+	margin-right: 60px;
+	}
+
+#oral_cam {
+	margin-left: 60px;
+	margin-right: 50px;
+	}
+
+#oral_method_title {
+	width: 170px;
+	margin-top: 50px;
+	margin-right: 20px;
+	padding-top: 10px;
+	text-align: right;
+	font-size: 16pt;
+	font-weight: bold;
+	color: #7b7b7b
+	}
+
+#oral_method {
+	float: left;
+	width: 1100px;
+	height: 200px;
+	margin-top: 50px;
+	padding: 10px;
+	text-align: left;
+	font-size: 14pt;
+	letter-spacing: -0.5px;
+	line-height: 120%;
+	background-color: #ededed;
+	border: solid 1px #e6e6e6;
+	}
+
+
+/* MENU 02 - VOCALIZATION TRAINING */
+#top_training_info_area {
+	float: right;
+	width: 370px;
+	height: 120px;
+	margin-top: 10px;
+	margin-right: 10px;
+	color: #757575
+	}
+
+#top_training_info_area_title {
+	float: left;
+	font-size: 17pt;
+	font-weight: bold;
+	margin-right: 20px;
+	margin-top: 7px;
+	}
+
+#top_training_info_area_content {
+	float: left;
+	width: 240px;
+	padding: 10px;
+	text-align: left;
+	font-size: 15pt;
+	letter-spacing: -1px;
+	border: solid 1px #dcdcdc;
+	background-color: #efefef;
+	}
+
+#vocalMenu, #vocalMenu_info1, #vocalMenu_info2, #vocalMenu_info3 {
+	margin-left: 100px;
+	margin-right: 100px;
+	}
+
+#vocalMenu1, #vocalMenu2, #vocalMenu3 {
+	width: 328px;
+	height: 412px;
+	margin-top: 80px;
+	margin-left: 40px;
+	margin-right: 40px;
+	display: inline-block;
+	}
+
+#vocalMenu1 { background:url('img/2_vocal/menu01_cont.jpg') no-repeat center center; }
+#vocalMenu2 { background:url('img/2_vocal/menu02_loudness.jpg') no-repeat center center; }
+#vocalMenu3 { background:url('img/2_vocal/menu03_pitch.jpg') no-repeat center center; }
+
+#vocalMenu1:hover { background:url('img/2_vocal/menu01_cont_hover.jpg') no-repeat center center; }
+#vocalMenu2:hover { background:url('img/2_vocal/menu02_loudness_hover.jpg') no-repeat center center; }
+#vocalMenu3:hover { background:url('img/2_vocal/menu03_pitch_hover.jpg') no-repeat center center; }
+
+#vocalMenu_info1, #vocalMenu_info2 {
+	height: 50px;
+	}
+
+#vocalMenu_info_level_title, #vocalMenu_info_percent_title {
+	width: 100px;
+	height: 30px;
+	font-size: 18pt;
+	font-weight: bold;
+	color: #757575;
+	text-align: left;
+	position: absolute;
+	margin-top: 20px;
+	margin-left: 40px;
+	}
+
+#vocalMenu_info_level, #vocalMenu_info_percent {
+	width: 250px;
+	height: 20px;
+	margin-top: 20px;
+	margin-left: 78px;
+	margin-right: 78px;
+	display: inline-block;
+	}
+
+#vocalMenu_info_level {
+	font-size: 18pt;
+	font-weight: bold;
+	color: #757575;
+	}
+
+#vocalMenu_info_percent {
+	font-size: 14pt;
+	font-weight: bold;
+	color: black;
+	width: 250px;
+	height: 28px;
+	border: solid 1px #d1d1d1;
+	}
+
+#vocalMenu_info_percent_bar {
+	position: absolute;
+	height: 26px;
+	background-color: #ffc702;
+	}
+
+#vocalMenu_info_percent_number {
+	position: absolute;
+	width: 247px;
+	height: 25px;
+	border: solid 1px white;
+	}
+
+#vocal_top_menu1, #vocal_top_menu2, #vocal_top_menu3 {
+	width: 110px;
+	height: 130px;
+	position: relative;
+	float: right;
+	margin-top: 10px;
+	margin-right:15px;
+	}
+
+#vocal_top_menu1 { background:url('img/2_vocal/menu01_cont_top.jpg') no-repeat center center; }
+#vocal_top_menu2 { background:url('img/2_vocal/menu02_loudness_top.jpg') no-repeat center center; }
+#vocal_top_menu3 { background:url('img/2_vocal/menu03_pitch_top.jpg') no-repeat center center; }
+
+#vocal_top_menu1:hover { background:url('img/2_vocal/menu01_cont_top_hover.jpg') no-repeat center center; }
+#vocal_top_menu2:hover { background:url('img/2_vocal/menu02_loudness_top_hover.jpg') no-repeat center center; }
+#vocal_top_menu3:hover { background:url('img/2_vocal/menu03_pitch_top_hover.jpg') no-repeat center center; }
+
+.game_list {
+	float: left;
+	width: 298px;
+	height: 255px;
+	margin-top: 40px;
+	margin-left: 38px;
+	margin-right: 38px;
+	}
+
+.game_list span {
+	display: block;
+	width: 298px;
+	height: 36px;
+	text-align: center;
+	font-size: 20pt;
+	font-weight: bold;
+	color: #757575;
+	letter-spacing: -1px;
+	margin-top: 5px;
+	}
+
+.game_img {
+	width: 298px;
+	height: 219px;
+	display: block;
+	}
+
+#vocal_game1_1 { background:url('img/2_vocal/game1_1.jpg') no-repeat center center; }
+#vocal_game1_2 { background:url('img/2_vocal/game1_2_locked.jpg') no-repeat center center; }
+#vocal_game1_3 { background:url('img/2_vocal/game_locked.jpg') no-repeat center center; }
+#vocal_game1_4 { background:url('img/2_vocal/game_locked.jpg') no-repeat center center; }
+#vocal_game1_5 { background:url('img/2_vocal/game_locked.jpg') no-repeat center center; }
+
+#lackPoint span {
+	width: 418px;
+	height:289px;
+	text-align: center;
+	font-size: 24pt;
+	font-weight: bold;
+	letter-spacing: -1px;
+	color: #000;
+	line-height: 150%;
+    display: inline-block;
+	margin-top: 320px;
+	padding-top: 100px;
+	background:url('img/2_vocal/lackPoint_back.png') no-repeat center center;
+	}
+
+#lackPoint font {
+	display: inline;
+	color: #850000;
+	}
+
+#lackPoint_okBtn {
+	margin-top: 50px;
+	width: 197px;
+	height: 65px;
+	display: inline-block;
+	background:url('img/2_vocal/lackPoint_okBtn.jpg') no-repeat center center;
+	}
+
+#game_info_area_left {
+	float: left;
+	width: 300px;
+	margin-top: 40px;
+	margin-left: 38px;
+	}
+
+#game_info_area_right {
+	float: left;
+	width: 1082px;
+	margin-top: 40px;
+	margin-left: 40px;
+	color: #515151;
+	text-align: left;
+	}
+
+#game_info_area_left img {
+	display: block;
+	}
+
+#game_info_area_left span {
+	text-align: left;
+	font-size: 15pt;
+	line-height: 130%;
+	padding-top: 30px;
+	display: table-cell;
+	}
+
+#game_info_area_right span {
+	text-align: left;
+	font-size: 22pt;
+	font-weight: bold;
+	}
+
+#game_info_content {
+	width: 1080px;
+	height: 430px;
+	margin-top: 10px;
+	background-color: #dbdbdb;
+	text-align: left;
+	}
+
+#game_info_content span {
+	width: 1000px;
+	height: 150px;
+	text-align: left;
+	font-size: 18pt;
+	line-height: 140%;
+	font-weight: normal;
+	display: table-cell;
+	padding: 15px;
+	padding-bottom: 25px;
+	}
+
+#game_info_content img {
+	float: left;
+	margin-left: 32px;
+	margin-right: 32px;
+	display: block;
+	}
+
+#game_startBtn {
+	float: right;
+	width: 197px;
+	height: 65px;
+	margin-top: 10px;
+	background:url('img/game_startBtn.jpg') no-repeat center center;
+	}
+
+
+/* MENU 03 - ARTICULATION TRAINING */
+
+#arti_setting1, #arti_setting2, #arti_setting3, #arti_setting4, #arti_setting5 {
+	width: 1350px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #e7e7e7;
+	}
+
+#arti_setting1, #arti_setting2 { height: 180px; }
+#arti_setting3, #arti_setting4 { height: 110px; }
+#arti_setting5 { height: 80px; }
+
+.arti_setting_title {
+	float: left;
+	width: 175px;
+	height: 50px;
+	margin-top: 22px;
+	margin-left: 25px;
+	}
+
+.arti_setting_param {
+	float: left;
+	width: 1130px;
+	margin-top: 25px;
+	}
+
+#arti_setting1_1, #arti_setting1_2, #arti_setting1_3, #arti_setting1_4, #arti_setting1_5, #arti_setting1_6 {
+	float: left;
+	display: table;
+	margin-bottom: 30px;
+	}
+
+#arti_setting2_1, #arti_setting2_2 {
+	display: table;
+	margin-bottom: 30px;
+	}
+
+#arti_setting3_1, #arti_setting4_1 {
+	margin-left: 145px;
+	}
+
+.arti_setting_subtitle {
+	float: left;
+	width: 100px;
+	font-size: 18pt;
+	text-align: right;
+	margin-top: 13px;
+	margin-left: 25px;
+	margin-right: 10px;
+	}
+
+.btnShape1, .btnShape2, .btnShape3 {
+	float: left;
+	height: 55px;
+	margin-left: 7px;
+	margin-right: 7px;
+	background-color: #cccccc;
+	text-align: center;
+	vertical-align: middle;
+	display: table-cell;
+	}
+
+.btnShape1 { width: 55px; }
+.btnShape2 { width: 105px; }
+.btnShape3 { width: 221px; }
+
+#arti_settingBtn1_1 { background:url('img/3_arti/settingBtns/settingBtn_1_1.jpg') no-repeat center center; }
+#arti_settingBtn1_2 { background:url('img/3_arti/settingBtns/settingBtn_1_2.jpg') no-repeat center center; }
+#arti_settingBtn1_3 { background:url('img/3_arti/settingBtns/settingBtn_1_3.jpg') no-repeat center center; }
+#arti_settingBtn1_4 { background:url('img/3_arti/settingBtns/settingBtn_1_4.jpg') no-repeat center center; }
+#arti_settingBtn1_5 { background:url('img/3_arti/settingBtns/settingBtn_1_5.jpg') no-repeat center center; }
+#arti_settingBtn1_6 { background:url('img/3_arti/settingBtns/settingBtn_1_6.jpg') no-repeat center center; }
+#arti_settingBtn1_7 { background:url('img/3_arti/settingBtns/settingBtn_1_7.jpg') no-repeat center center; }
+#arti_settingBtn1_8 { background:url('img/3_arti/settingBtns/settingBtn_1_8.jpg') no-repeat center center; }
+#arti_settingBtn1_9 { background:url('img/3_arti/settingBtns/settingBtn_1_9.jpg') no-repeat center center; }
+#arti_settingBtn1_10 { background:url('img/3_arti/settingBtns/settingBtn_1_10.jpg') no-repeat center center; }
+#arti_settingBtn1_11 { background:url('img/3_arti/settingBtns/settingBtn_1_11.jpg') no-repeat center center; }
+#arti_settingBtn1_12 { background:url('img/3_arti/settingBtns/settingBtn_1_12.jpg') no-repeat center center; }
+#arti_settingBtn1_13 { background:url('img/3_arti/settingBtns/settingBtn_1_13.jpg') no-repeat center center; }
+#arti_settingBtn1_14 { background:url('img/3_arti/settingBtns/settingBtn_1_14.jpg') no-repeat center center; }
+#arti_settingBtn1_15 { background:url('img/3_arti/settingBtns/settingBtn_1_15.jpg') no-repeat center center; }
+#arti_settingBtn1_16 { background:url('img/3_arti/settingBtns/settingBtn_1_16.jpg') no-repeat center center; }
+#arti_settingBtn1_17 { background:url('img/3_arti/settingBtns/settingBtn_1_17.jpg') no-repeat center center; }
+#arti_settingBtn1_18 { background:url('img/3_arti/settingBtns/settingBtn_1_18.jpg') no-repeat center center; }
+#arti_settingBtn1_19 { background:url('img/3_arti/settingBtns/settingBtn_1_19.jpg') no-repeat center center; }
+#arti_settingBtn2_1 { background:url('img/3_arti/settingBtns/settingBtn_2_1.jpg') no-repeat center center; }
+#arti_settingBtn2_2 { background:url('img/3_arti/settingBtns/settingBtn_2_2.jpg') no-repeat center center; }
+#arti_settingBtn2_3 { background:url('img/3_arti/settingBtns/settingBtn_2_3.jpg') no-repeat center center; }
+#arti_settingBtn3_1 { background:url('img/3_arti/settingBtns/settingBtn_3_1.jpg') no-repeat center center; }
+#arti_settingBtn3_2 { background:url('img/3_arti/settingBtns/settingBtn_3_2.jpg') no-repeat center center; }
+#arti_settingBtn4_1 { background:url('img/3_arti/settingBtns/settingBtn_4_1.jpg') no-repeat center center; }
+#arti_settingBtn4_2 { background:url('img/3_arti/settingBtns/settingBtn_4_2.jpg') no-repeat center center; }
+#arti_settingBtn4_3 { background:url('img/3_arti/settingBtns/settingBtn_4_3.jpg') no-repeat center center; }
+#arti_settingBtn4_4 { background:url('img/3_arti/settingBtns/settingBtn_4_4.jpg') no-repeat center center; }
+#arti_settingBtn5_1 { background:url('img/3_arti/settingBtns/settingBtn_5_1.jpg') no-repeat center center; }
+#arti_settingBtn5_2 { background:url('img/3_arti/settingBtns/settingBtn_5_2.jpg') no-repeat center center; }
+
+#arti_setting_startBtn {
+	float: right;
+	width: 197px;
+	height: 65px;
+	margin-right: 15px;
+	background:url('img/3_arti/setting_generationBtn.jpg') no-repeat center center;
+	}
+
+#arti_game1 { background:url('img/3_arti/game1.jpg') no-repeat center center; }
+#arti_game2 { background:url('img/3_arti/game_locked.jpg') no-repeat center center; }
+#arti_game3 { background:url('img/3_arti/game_locked.jpg') no-repeat center center; }
+#arti_game4 { background:url('img/3_arti/game_locked.jpg') no-repeat center center; }
+#arti_game5 { background:url('img/3_arti/game_locked.jpg') no-repeat center center; }
+#arti_game6 { background:url('img/3_arti/game_locked.jpg') no-repeat center center; }
+#arti_game7 { background:url('img/3_arti/game_locked.jpg') no-repeat center center; }
