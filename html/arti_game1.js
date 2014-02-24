@@ -1,6 +1,6 @@
 function randomFromTo(from, to){
 	return Math.floor(Math.random() * (to - from + 1) + from);
-}
+};
 
 function moveRandom(obj) {
 	/* get container position and size
@@ -34,7 +34,8 @@ function moveRandom(obj) {
 		}, 5000, function() {
   moveRandom(obj);
 	});
-}
+};
+
 $('.arti_game1_smallCircle').each(function() {
 moveRandom($(this));
 });

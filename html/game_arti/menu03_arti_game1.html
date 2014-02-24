@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>언어치료 기능성 게임 > 조음훈련</title>
+        <link href="../styles.css" rel="stylesheet" type="text/css">
+        <link href="../styles_arti_game1.css" rel="stylesheet" type="text/css">
+        <script src="../jquery-1.11.0.js" charset="utf-8"></script>
+        <script src="../popupMenu.js" charset="utf-8"></script>
+        <script src="../angular.js" charset="utf-8"></script>
+        <script src="controller.js" charset="utf-8"></script>
+    </head>
+
+    <body ng-app="artiGame">
+        <div ID="mainBody">
+            <div ID="mainFrame">
+
+                <!-- 본문 -->
+                <div ID="topArea">
+                    <a class="title" href="mainMenu.html"></a>
+                    <div ID="sub_title"><span>조음훈련 > <font ID="current_sub_title">선택게임</font></span></div>
+                    <span>목표 자음: ㅁ<br>
+                        목표 음소: 어두 종성<br>
+                        훈련 단계: 단어</span>
+                </div>
+                <div ID="contentArea" ng-controller="artiGameController">
+                    <div ID="contents">
+                        <div class="arti_game1_smallCircle" ng-click="loadData()" ng-repeat="i in [1, 2, 3, 4]" ng-style="setPosition()"></div>
+                        <img class="arti_game1_bigCircle" ng-src={{bigCircle.img}}>
+                        <span class="arti_game1_word">{{bigCircle.word}}</span>
+                        <span class="arti_game1_point">{{bigCircle.point}} points</span>
+                    </div>
+                </div>
+                <div ID="bottomArea">
+                    <a href="#" ID="menu" onclick="showMenu()"></a>
+                </div>
+
+
+
+            </div>
+        </div>
+        <div ID="popupMenu" class="popup_background">
+            <span><a href="#" onclick="hideMenu()">게임으로 돌아가기</a><br>
+                <a href="mainMenu.html">메인으로 가기</a><br>
+                설정<br>
+                로그아웃<br>
+                종료</span>
+        </div>
+    </body>
+</html>
