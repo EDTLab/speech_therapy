@@ -7,7 +7,8 @@
         <link href="../styles_arti_game1.css" rel="stylesheet" type="text/css">
         <script src="../jquery-1.11.0.js" charset="utf-8"></script>
         <script src="../popupMenu.js" charset="utf-8"></script>
-        <script src="../angular.js" charset="utf-8"></script>
+        <script src="../js/lib/angular/angular.js"></script>
+        <script src="../js/lib/angular/angular-route.js"></script>
         <script src="controller.js" charset="utf-8"></script>
     </head>
 
@@ -25,7 +26,7 @@
                 </div>
                 <div ID="contentArea" ng-controller="artiGameController">
                     <div ID="contents">
-                        <div class="arti_game1_smallCircle" ng-click="loadData()" ng-repeat="i in [1, 2, 3, 4]" ng-style="setPosition()"></div>
+                        <div class="arti_game1_smallCircle" ng-repeat="p in position" ng-click="loadData()" ng-style="position[$index]">{{$index}}</div>
                         <img class="arti_game1_bigCircle" ng-src={{bigCircle.img}}>
                         <span class="arti_game1_word">{{bigCircle.word}}</span>
                         <span class="arti_game1_point">{{bigCircle.point}} points</span>
