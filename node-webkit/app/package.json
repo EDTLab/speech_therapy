@@ -1,19 +1,20 @@
 {
-  "name": "speech-therapy",
-  "description": "desktop app for speech therapy",
-  "main": "index.html",
-  "version": "0.0.1",
-  "single-instance": true,
-  "window": {
-    "title": "Speech Therapy",
-    "toolbar": false,
-    "frame": false,
-    "position": "center",
-    "fullscreen": true,
-    "resizable": true,
-    "min_width": 800,
-    "min_height": 600
-  },
-  "node-remote": "<local>",
-  "chromium-args": "--child-clean-exit"
+    "name": "speech-therapy",
+    "description": "desktop app for speech therapy",
+    "main": "index.html",
+    "version": "0.0.1",
+    "single-instance": true,
+    "window": {
+        "title": "Speech Therapy",
+        "toolbar": false,
+        "frame": false,
+        "position": "null",
+        "resizable": true,
+        "width": 1600,
+        "height": 900,
+        "min_width": 1600,
+        "min_height": 900
+    },
+    "node-remote": "<local>",
+    "chromium-args": "--child-clean-exit"
 }
