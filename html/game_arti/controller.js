@@ -16,10 +16,13 @@ artiGame.service('artiGameService', function () {
             circle.point = this.data.points[Math.floor(Math.random() * this.data.points.length)];
             return circle;
         },
-        setPosition: function () {
+        random: function (from, to) {
+            return Math.floor(Math.random() * (to - from + 1)) + from;
+        },
+        setPosition: function (n, e, s, w) {
             var style = {};
-            style.top = Math.floor(Math.random() * 400) + 200;
-            style.left = Math.floor(Math.random() * 300) + 50 + Math.floor(Math.random() * 2) * 900;
+            style.top = this.random(n, s);
+            style.left = Math.random() * 2 < 1? this.random(50, 300)
             return style;
         },
         getPosition: function () {
