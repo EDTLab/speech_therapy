@@ -1,0 +1,36 @@
+{
+  "name": "speech-therapy",
+  "version": "0.0.0",
+  "description": "",
+  "keywords": [],
+  "homepage": "https://github.com/soundlake/speech-therapy",
+  "bugs": "https://github.com/soundlake/speech-therapy/issues",
+  "author": {
+    "name": "Sinyeol An",
+    "email": "soundlake@gmail.com",
+    "url": "https://github.com/soundlake"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/soundlake/speech-therapy.git"
+  },
+  "dependencies": {
+    "angular": "^1.2.10",
+    "angular-bootstrap": ">=0.0.4",
+    "express": "3.x",
+    "nedb": "~0.8.0"
+  },
+  "devDependencies": {
+    "matchdep": "~0.1.2",
+    "grunt": "~0.4.1",
+    "grunt-contrib-copy": "~0.4.1",
+    "grunt-contrib-concat": "~0.1.3",
+    "grunt-contrib-jshint": "~0.4.3",
+    "grunt-contrib-clean": "~0.4.1",
+    "grunt-contrib-rename": "0.0.3",
+    "grunt-contrib-compress": "~0.5.3"
+  },
+  "engines": {
+    "node": ">=0.8.0"
+  }
+}
