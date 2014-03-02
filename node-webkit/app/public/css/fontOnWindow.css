@@ -1,0 +1,7 @@
+body {font-size:62.5%;}  /* Set the size of 1em to 10px in all browsers */
+
+body.extraWide {font-size:85%;}
+body.wide {font-size:75%;}
+
+body.narrow {font-size:50%;}
+body.extraNarrow {font-size:40%;}
