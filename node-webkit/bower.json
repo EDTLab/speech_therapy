@@ -1,6 +1,15 @@
 {
-  "name": "package",
+  "name": "speech-therapy",
   "version": "0.0.0",
-  "dependencies": {}
+  "dependencies": {
+      "angular": "latest",
+      "angular-resource": "latest",
+      "angular-cookies": "latest",
+      "angular-mocks": "latest",
+      "angular-route": "latest",
+      "bootstrap": "3.x",
+      "angular-bootstrap": "0.10.0",
+      "angular-ui-router": "#master"
+  }
 }
 

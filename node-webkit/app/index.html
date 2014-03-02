@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html ng-app="stLogin">
+<html data-ng-app="stLogin">
 <head>
     <meta charset="utf-8">
     <title>Better Speech - 언어치료 기능성 게임</title>
 
     <!-- javascript (angular.js) -->
-    <script src="public/lib/angular.min.js" charset="utf-8"></script>
+    <script src="public/lib/angular.min.js"></script>
     <script>
 angular.module('stLogin', [])
     .factory('Authentication', function () {
@@ -26,7 +26,6 @@ angular.module('stLogin', [])
 	.controller('stLoginController', ['$scope', 'Authentication', 'Window', function ($scope, Authentication, Window) {
         "use strict";
     	$scope.login = function () {
-            console.log("bang: button clicked");
             Authentication($scope.id, $scope.password, function (err, str) {
                 if (err != null) {
                     console.log(err);
@@ -80,14 +79,14 @@ body {
 </head>
 <body>
     <div class="container">
-        <img id="top" src="public/img/login/top.jpg">
-        <img id="title" src="public/img/login/title.jpg">
-        <div id="login" ng-controller="stLoginController">
-            <input class="form-control" type="text" ng-model="id" placeholder="아이디">
-            <input class="form-control" type="password" ng-model="password" placeholder="비밀번호">
-            <button class="btn btn-primary btn-lg" type="button" ng-click="login()">시작하기</button>
+        <img id="top" src="public/img/login/top.jpg" alt="title img">
+        <img id="title" src="public/img/login/title.jpg" alt="title text">
+        <div id="login" data-ng-controller="stLoginController">
+            <input class="form-control" type="text" data-ng-model="id" placeholder="아이디">
+            <input class="form-control" type="password" data-ng-model="password" placeholder="비밀번호">
+            <button class="btn btn-primary btn-lg" type="button" data-ng-click="login()">시작하기</button>
         </div>
-        <img id="organizations" src="public/img/login/logo.jpg">
+        <img id="organizations" src="public/img/login/logo.jpg" alt="ortanzations logos">
     </div>
 </body>
 </html>
