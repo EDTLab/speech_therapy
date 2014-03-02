@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>한글 단어 데이터베이스 만들기</title>
+        <script src="korean.js"></script>
+    </head>
+    <body>
+        <div class="input">
+            <form action="#" method="post">
+                <label for="word">word: </label>
+                <input type="text" name="word">
+                <input type="submit" value="submit">
+            </form>
+        </div>
+        <div class="output">
+            <script>
+                var fs = require('fs');
+                fs.readFile('../db/word.db', function (err, data) {
+                    if (err) throw err;
+                    document.write(data);
+                });
+            </script>
+        </div>
+    </body>
+</html>
